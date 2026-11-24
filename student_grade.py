@@ -19,3 +19,27 @@ def grade(avg):
 
 def is_pass(marks):
     return all(mark >= 40 for mark in marks)
+
+# Main program
+
+name = input("Enter student name: ")
+
+n = int(input("Enter number of subjects: "))
+
+marks = []
+
+for i in range(n):
+    mark = int(input("Enter marks: "))
+    marks.append(mark)
+
+avg = average(marks)
+
+print("\nStudent Name:", name)
+print("Average Marks:", avg)
+print("Grade:", grade(avg))
+
+if is_pass(marks):
+    print("Result: PASS")
+else:
+    print("Result: FAIL")
+    
