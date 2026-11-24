@@ -34,7 +34,8 @@ for i in range(n):
 
 avg = average(marks)
 
-print("\nStudent Name:", name)
+print("\n----Student Details----")
+print("Student Name:", name)
 print("Average Marks:", avg)
 print("Grade:", grade(avg))
 
